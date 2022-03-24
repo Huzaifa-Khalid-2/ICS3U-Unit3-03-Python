@@ -5,7 +5,7 @@
 # This function takes a random integer between 0-9
 # and tells the user if they guessed corretly
 
-import constants_two
+import random
 
 
 def main():
@@ -14,11 +14,12 @@ def main():
 
     # input
     user_guess = int(input("Insert any number between 0-9 (integers): "))
+
     # process and output
     print("")
-    if user_guess == constants_two.SECRET_NUMBER:
+    if user_guess == random.randint(1, 9):
         print("Hooray you guessed correctly !! :)")
-    if user_guess != constants_two.SECRET_NUMBER:
+    else:
         print("Oh No!!! guessed incorrectly :(")
 
     print("\nDone.")
