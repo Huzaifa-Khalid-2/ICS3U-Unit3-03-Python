@@ -14,13 +14,14 @@ def main():
 
     # input
     user_guess = int(input("Insert any number between 0-9 (integers): "))
+    number = random.randint(1, 9)
 
     # process and output
     print("")
-    if user_guess == random.randint(1, 9):
+    if user_guess == number:
         print("Hooray you guessed correctly !! :)")
     else:
-        print("Oh No!!! guessed incorrectly :(")
+        print("Oh No!!! you guessed incorrectly :(")
 
     print("\nDone.")
 
